@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问候页面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #808080; /* 灰色背景 */
+            font-family: 'Microsoft YaHei', 'Segoe UI', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .greeting {
+            color: #000000; /* 黑色字体 */
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            line-height: 1.4;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .greeting {
+                font-size: 2.2rem;
+                padding: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .greeting {
+                font-size: 1.8rem;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="greeting">张仪佳和吴琼你们好</div>
+</body>
+</html>
